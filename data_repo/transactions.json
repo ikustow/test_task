@@ -1,0 +1,95 @@
+{
+  "accountID": "00001",
+  "transactions": [
+    {
+      "id": "0001",
+      "date": "Yesterday",
+      "time": "12:23",
+      "customer": "Pret A Manger",
+      "amount": "55.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0002",
+      "date": "Yesterday",
+      "time": "12:23",
+      "customer": "Darren Hodgkin",
+      "amount": "130.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "+"
+    },
+    {
+      "id": "0003",
+      "date": "Yesterday",
+      "time": "12:23",
+      "customer": "McDonalds",
+      "amount": "55.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0004",
+      "date": "Yesterday",
+      "time": "12:23",
+      "customer": "Starbucks",
+      "amount": "55.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0005",
+      "date": "Yesterday",
+      "time": "12:23",
+      "customer": "Dave Winklevoss",
+      "amount": "300.00",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0006",
+      "date": "Sat, Dec 11",
+      "time": "12:23",
+      "customer": "Virgin Megastore",
+      "amount": "500.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0007",
+      "date": "Sat, Dec 11",
+      "time": "12:23",
+      "customer": "Nike",
+      "amount": "500.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0008",
+      "date": "Thurs, Dec 9",
+      "time": "12:23",
+      "customer": "Louis Vuitton",
+      "amount": "500.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    },
+    {
+      "id": "0009",
+      "date": "Thurs, Dec 9",
+      "time": "12:23",
+      "customer": "Carrefour",
+      "amount": "500.31",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "type": "-"
+    }
+  ]
+}
