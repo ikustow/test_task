@@ -80,21 +80,19 @@ class TransactionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final List dates = datesFromList(transactions);
 
-    return Container(
-      child: ListView.builder(
-        shrinkWrap: true,
-        itemCount: dates.length,
-        itemBuilder: (_, index) {
-          final listOfTransactions = transactions.transactions!.toList();
-          final listByDate = listOfTransactions
-              .where((element) => element.date == dates[index]);
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: dates.length,
+      itemBuilder: (_, index) {
+        final listOfTransactions = transactions.transactions!.toList();
+        final listByDate = listOfTransactions
+            .where((element) => element.date == dates[index]);
 
-          return ListViewWidget(
-            date: dates[index],
-            transactions: listByDate.toList(),
-          );
-        },
-      ),
+        return ListViewWidget(
+          date: dates[index],
+          transactions: listByDate.toList(),
+        );
+      },
     );
   }
 }
