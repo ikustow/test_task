@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Transaction History`
+  /// `Transactions History`
   String get transactionHistoryTitle {
     return Intl.message(
-      'Transaction History',
+      'Transactions History',
       name: 'transactionHistoryTitle',
       desc: '',
       args: [],

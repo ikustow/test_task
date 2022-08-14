@@ -11,3 +11,4 @@ const Color textMainGreyColor = Color.fromRGBO(116 , 116, 116, 1);
 const Color textSecondaryBlackColor = Color.fromRGBO(0, 0, 0, 1);
 
 const Color listSubtitleColor = Color.fromRGBO(170, 170, 170, 1);
+const Color listHeaderTextColor = Color.fromRGBO(20, 20, 20, 1);

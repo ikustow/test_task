@@ -6,6 +6,9 @@ class TransactionList {
 
   TransactionList({this.accountID, this.transactions});
 
+
+
+
   TransactionList.fromJson(Map<String, dynamic> json) {
     accountID = json['accountID'];
     if (json['transactions'] != null) {

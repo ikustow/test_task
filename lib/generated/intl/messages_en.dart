@@ -24,6 +24,6 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "hideButtonTitle": MessageLookupByLibrary.simpleMessage("Hide"),
         "transactionHistoryTitle":
-            MessageLookupByLibrary.simpleMessage("Transaction History")
+            MessageLookupByLibrary.simpleMessage("Transactions History")
       };
 }
