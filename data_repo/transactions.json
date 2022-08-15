@@ -9,7 +9,8 @@
       "amount": "55.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0001.png"
     },
     {
       "id": "0002",
@@ -19,7 +20,8 @@
       "amount": "130.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "+"
+      "type": "+",
+      "logo": "images/0002.png"
     },
     {
       "id": "0003",
@@ -29,7 +31,8 @@
       "amount": "55.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0003.png"
     },
     {
       "id": "0004",
@@ -39,7 +42,8 @@
       "amount": "55.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0004.jpeg"
     },
     {
       "id": "0005",
@@ -49,7 +53,8 @@
       "amount": "300.00",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0005.png"
     },
     {
       "id": "0006",
@@ -59,7 +64,8 @@
       "amount": "500.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0006.png"
     },
     {
       "id": "0007",
@@ -69,7 +75,8 @@
       "amount": "500.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0007.jpeg"
     },
     {
       "id": "0008",
@@ -79,7 +86,8 @@
       "amount": "500.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0008.jpeg"
     },
     {
       "id": "0009",
@@ -89,7 +97,8 @@
       "amount": "500.31",
       "currency": "USD",
       "currencySymbol": "$",
-      "type": "-"
+      "type": "-",
+      "logo": "images/0009.png"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 
 class TransactionList {
   String? accountID;
@@ -14,13 +14,13 @@ class TransactionList {
     if (json['transactions'] != null) {
       transactions = <Transactions>[];
       json['transactions'].forEach((v) {
-        transactions!.add(new Transactions.fromJson(v));
+        transactions!.add(Transactions.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = Map<String, dynamic>();
     data['accountID'] = this.accountID;
     if (this.transactions != null) {
       data['transactions'] = this.transactions!.map((v) => v.toJson()).toList();
@@ -38,7 +38,7 @@ class Transactions {
   String? currency;
   String? currencySymbol;
   String? type;
-  Image? customerImage;
+  String? customerImage;
 
   Transactions(
       {this.id,
@@ -60,11 +60,11 @@ class Transactions {
     amount = json['amount'];
     currency = json['currency'];
     currencySymbol = json['currencySymbol'];
-    customerImage = json['customerImage'];
+    customerImage = json['logo'];
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = Map<String, dynamic>();
     data['id'] = this.id;
     data['date'] = this.date;
     data['customer'] = this.customer;
@@ -72,7 +72,7 @@ class Transactions {
     data['currency'] = this.currency;
     data['currencySymbol'] = this.currencySymbol;
     data['type'] = this.type;
-   // data['customerImage'] = this.customerImage;
+    data['logo'] = this.customerImage;
     return data;
   }
 }

@@ -5,6 +5,7 @@ import 'package:test_task/account/ui/dates_dropdown_button.dart';
 import '../../generated/l10n.dart';
 import '../../theme/colors.dart';
 import '../../theme/sizes.dart';
+import '../../theme/styles.dart';
 
 class FilterSection extends StatefulWidget {
   const FilterSection({Key? key}) : super(key: key);
@@ -77,7 +78,3 @@ class CalendarContainer extends StatelessWidget {
 }
 
 
-const TextStyle transactionsHistoryStyle = TextStyle(
-  color: textMainWhiteColor,
-  fontSize: 22,
-);

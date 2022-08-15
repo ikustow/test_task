@@ -5,6 +5,7 @@ import '../../core/model/account.dart';
 import '../../generated/l10n.dart';
 import '../../theme/colors.dart';
 import '../../theme/sizes.dart';
+import '../../theme/styles.dart';
 
 class AccountSection extends StatelessWidget {
   final Account accData;
@@ -86,6 +87,9 @@ class HideButton extends StatelessWidget {
     return OutlinedButton(
       onPressed: () {},
       style: OutlinedButton.styleFrom(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.0),
+        ),
         fixedSize: const Size(8, 8),
         side: const BorderSide(
             width: 0.5, color: Colors.white54, style: BorderStyle.solid),
@@ -98,23 +102,5 @@ class HideButton extends StatelessWidget {
   }
 }
 
-const TextStyle hideButtonTitleStyle = TextStyle(
-  color: textMainWhiteColor,
-  fontSize: 14,
-);
 
-const TextStyle accountNameStyle = TextStyle(
-  color: textMainGreyColor,
-  fontSize: 24,
-);
-
-const TextStyle accountAmountStyle = TextStyle(
-  color: textMainWhiteColor,
-  fontSize: 36,
-);
-
-const TextStyle currencySymbolStyle = TextStyle(
-  color: textMainWhiteColor,
-  fontSize: 22,
-);
 

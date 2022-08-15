@@ -70,6 +70,16 @@ flutter:
     - data_repo/account.json
     - data_repo/transactions.json
     - images/flag.png
+    - images/0001.png
+    - images/0002.png
+    - images/0003.png
+    - images/0004.jpeg
+    - images/0005.png
+    - images/0006.png
+    - images/0007.jpeg
+    - images/0008.jpeg
+    - images/0009.png
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 
-import '../../theme/colors.dart';
+import '../../theme/styles.dart';
+
 
 class CurrencyDropdownButton extends StatefulWidget {
   const CurrencyDropdownButton({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class _CurrencyDropdownButtonState extends State<CurrencyDropdownButton> {
           padding: const EdgeInsets.only(top: 16.0, left: 8),
           child: Text(
             _datesList.first.toString(),
-            style: TextStyle(color: Colors.white),
+            style: const TextStyle(color: Colors.white),
           ),
         ),
         // Hide the default underline
@@ -74,8 +75,3 @@ class _CurrencyDropdownButtonState extends State<CurrencyDropdownButton> {
     );
   }
 }
-
-const TextStyle dropdownTitleStyle = TextStyle(
-  color: textMainWhiteColor,
-  fontSize: 18,
-);

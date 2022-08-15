@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
       ),
       home: RepositoryProvider(
         create: (context) => DataService(),
-        child: AccountPage(),
+        child: const AccountPage(),
       ),
     );
   }
