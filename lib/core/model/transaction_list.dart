@@ -20,10 +20,10 @@ class TransactionList {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['accountID'] = this.accountID;
-    if (this.transactions != null) {
-      data['transactions'] = this.transactions!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['accountID'] = accountID;
+    if (transactions != null) {
+      data['transactions'] = transactions!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -64,15 +64,15 @@ class Transactions {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = Map<String, dynamic>();
-    data['id'] = this.id;
-    data['date'] = this.date;
-    data['customer'] = this.customer;
-    data['amount'] = this.amount;
-    data['currency'] = this.currency;
-    data['currencySymbol'] = this.currencySymbol;
-    data['type'] = this.type;
-    data['logo'] = this.customerImage;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['date'] = date;
+    data['customer'] = customer;
+    data['amount'] = amount;
+    data['currency'] = currency;
+    data['currencySymbol'] = currencySymbol;
+    data['type'] = type;
+    data['logo'] = customerImage;
     return data;
   }
 }

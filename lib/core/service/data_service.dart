@@ -1,6 +1,4 @@
 import 'dart:convert';
-
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:test_task/core/model/account.dart';
 import 'package:test_task/core/model/transaction_list.dart';

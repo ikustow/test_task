@@ -14,7 +14,7 @@ class AccountDataLoaded extends AccountState {
   final Account accData;
   final TransactionList transactions;
 
-  AccountDataLoaded({required this.accData, required this.transactions});
+  const AccountDataLoaded({required this.accData, required this.transactions});
 
   @override
   List<Object> get props => [];
