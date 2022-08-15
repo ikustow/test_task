@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../../theme/colors.dart';
 import '../../theme/styles.dart';
 
 
@@ -23,7 +24,7 @@ class _CurrencyDropdownButtonState extends State<CurrencyDropdownButton> {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(width: 0.5, color: Colors.white54)
+          border: Border.all(width: 0.5, color: textSecondaryWhiteColor)
       ),
       child: DropdownButton<String>(
         value: _selectedDatesList,
@@ -38,16 +39,16 @@ class _CurrencyDropdownButtonState extends State<CurrencyDropdownButton> {
           padding: const EdgeInsets.only(top: 16.0, left: 8),
           child: Text(
             _datesList.first.toString(),
-            style: const TextStyle(color: Colors.white),
+            style: const TextStyle(color: textMainWhiteColor),
           ),
         ),
         // Hide the default underline
         underline: Container(),
         // set the color of the dropdown menu
-        dropdownColor: Colors.black,
-        icon: const Icon(
+        dropdownColor: mainColor,
+        icon:  const Icon(
           Icons.arrow_drop_down_rounded,
-          color: Colors.white54,
+          color: textSecondaryWhiteColor,
         ),
         isExpanded: true,
         items: _datesList

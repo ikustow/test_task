@@ -24,7 +24,7 @@ class _DatesDropdownButtonState extends State<DatesDropdownButton> {
       width: widthSize,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(width: 0.5, color: Colors.white54)
+          border: Border.all(width: 0.5, color: textSecondaryWhiteColor)
       ),
       child: DropdownButton<String>(
         value: _selectedCurrencyList,
@@ -45,10 +45,10 @@ class _DatesDropdownButtonState extends State<DatesDropdownButton> {
         // Hide the default underline
         underline: Container(),
         // set the color of the dropdown menu
-        dropdownColor: Colors.black,
+        dropdownColor: mainColor,
         icon: const Icon(
           Icons.arrow_drop_down_rounded,
-          color: Colors.white54,
+          color: textSecondaryWhiteColor,
         ),
         isExpanded: true,
         items: _currencyList

@@ -65,12 +65,12 @@ class CalendarContainer extends StatelessWidget {
       width: widthSize,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(width: 0.5, color: Colors.white54)
+          border: Border.all(width: 0.5, color: textSecondaryWhiteColor)
       ),
       child: const Padding(
         padding: EdgeInsets.all(12.0),
         child: Icon(Icons.calendar_today_outlined,
-          color: Colors.white54,
+          color: textSecondaryWhiteColor,
           size: 25,),
       ),
     );

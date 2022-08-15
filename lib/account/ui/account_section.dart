@@ -92,7 +92,7 @@ class HideButton extends StatelessWidget {
         ),
         fixedSize: const Size(8, 8),
         side: const BorderSide(
-            width: 0.5, color: Colors.white54, style: BorderStyle.solid),
+            width: 0.5, color: textSecondaryWhiteColor, style: BorderStyle.solid),
       ),
       child: Text(
         S.of(context).hideButtonTitle,
