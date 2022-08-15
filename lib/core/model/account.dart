@@ -4,7 +4,7 @@ class Account {
   String? id;
   String? name;
   String? amountString;
-  Image? image;
+  String? image;
   String? currency;
   String? currencySymbol;
 
@@ -16,11 +16,11 @@ class Account {
         this.currency,
         this.currencySymbol});
 
-  Account.fromJson(Map<String, dynamic> json, avatarImage) {
+  Account.fromJson(Map<String, dynamic> json,) {
     id = json['id'];
     name = json['name'];
     amountString = json['amountString'];
-    image = avatarImage;
+    image = 'images/flag.png';
     currency = json['currency'];
     currencySymbol = json['currencySymbol'];
   }
@@ -30,7 +30,7 @@ class Account {
     data['id'] = this.id;
     data['name'] = this.name;
     data['amountString'] = this.amountString;
-   // data['image'] = this.image;
+    data['image'] = this.image;
     data['currency'] = this.currency;
     data['currencySymbol'] = this.currencySymbol;
     return data;

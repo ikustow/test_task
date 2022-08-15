@@ -60,6 +60,16 @@ class S {
     );
   }
 
+  /// `Start`
+  String get startButtonTitle {
+    return Intl.message(
+      'Start',
+      name: 'startButtonTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Hide`
   String get hideButtonTitle {
     return Intl.message(

@@ -28,7 +28,7 @@ class AccountSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(48), // Image border
                 child: SizedBox.fromSize(
                   size: const Size.fromRadius(48), // Image radius
-                  child: Image.asset('images/flag.png', fit: BoxFit.fill),
+                  child: Image.asset(accData.image.toString(), fit: BoxFit.fill),
                 ),
               ),
             ),

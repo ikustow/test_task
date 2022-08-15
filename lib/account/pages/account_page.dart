@@ -50,7 +50,10 @@ class AccountWidget extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back,),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
         actions: const [
           Icon(Icons.open_in_new),
         ],

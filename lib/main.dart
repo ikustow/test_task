@@ -16,25 +16,46 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      localizationsDelegates: const [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      // title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: mainColor,
-          secondary: secondaryColor,
+    return RepositoryProvider(
+      create: (context) => DataService(),
+      child: MaterialApp(
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        // title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSwatch().copyWith(
+            primary: mainColor,
+            secondary: secondaryColor,
+          ),
         ),
-      ),
-      home: RepositoryProvider(
-        create: (context) => DataService(),
-        child: const AccountPage(),
+        home: const StartPage(),
       ),
     );
   }
 }
 
+// Added to display back icon in AppBar
+class StartPage extends StatelessWidget {
+  const StartPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: MaterialButton(onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const AccountPage()),
+          );
+        },
+          child: Text( S.of(context).startButtonTitle,),
+
+        ),
+      ),
+    );
+  }
+}

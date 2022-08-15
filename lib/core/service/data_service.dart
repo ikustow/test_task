@@ -11,8 +11,7 @@ class DataService {
   Future<Account> getAccountData() async {
     
     final jsonString = json.decode(await readAccountJson());
-    const Image avatar = Image(image: AssetImage('flag.png'),width: 96, height: 96,);
-    final Account data = Account.fromJson(jsonString, avatar);
+    final Account data = Account.fromJson(jsonString);
 
     return data;
   }
